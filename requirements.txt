@@ -1,0 +1,2 @@
+aioinflux==0.9.0
+amcrest==1.9.3

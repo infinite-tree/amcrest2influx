@@ -1,0 +1,13 @@
+ [Unit]
+ Description=Amcrest to InfluxDB Bridge
+ After=multi-user.target
+
+ [Service]
+ Type=idle
+ ExecStart=/usr/bin/python3 /home/pi/amcrest2influx/amcrest2influx.py
+ User=pi
+ Group=pi
+ Restart=always
+
+ [Install]
+ WantedBy=multi-user.target
